@@ -1,10 +1,10 @@
-import { observable, action } from 'mobx';
+import { observable, action } from 'mobx'
 
-let <%= name %> = observable({
-});
+const <%= name %> = observable({
+})
 
 <%= name %>.replaceMeWithAnAction = action(() => {
 
-});
+})
 
-export default <%= name %>;
+export default <%= name %>

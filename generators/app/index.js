@@ -21,10 +21,7 @@ module.exports = class extends Generator {
       {
         type: 'input',
         name: 'componentName',
-        message: 'What is the name of your component?',
-        validate: function (value) {
-          return value.match(/-/i) ? true : 'Please enter a valid component name';
-        }
+        message: 'What is the name of your component (if multiple names, separate with hyphen)?'
       }];
 
     return this.prompt(prompts).then((props) => {
